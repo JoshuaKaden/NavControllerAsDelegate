@@ -14,6 +14,11 @@
 		931B08FB1C46A7F20001570B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931B08F91C46A7F20001570B /* LaunchScreen.storyboard */; };
 		931B09061C46A7F20001570B /* NavControllerAsDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B09051C46A7F20001570B /* NavControllerAsDelegateTests.swift */; };
 		931B09111C46A7F20001570B /* NavControllerAsDelegateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B09101C46A7F20001570B /* NavControllerAsDelegateUITests.swift */; };
+		931B09211C46ABD30001570B /* UINavigationController+AppManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B09201C46ABD30001570B /* UINavigationController+AppManagerDelegate.swift */; };
+		931B09231C46ACA60001570B /* LightGrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B09221C46ACA60001570B /* LightGrayViewController.swift */; };
+		931B09251C46AD1D0001570B /* AppManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B09241C46AD1D0001570B /* AppManagerViewController.swift */; };
+		931B09271C46AE2F0001570B /* DarkGrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B09261C46AE2F0001570B /* DarkGrayViewController.swift */; };
+		93A576D11C46B05100678D95 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A576D01C46B05100678D95 /* AppManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		931B090C1C46A7F20001570B /* NavControllerAsDelegateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavControllerAsDelegateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		931B09101C46A7F20001570B /* NavControllerAsDelegateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavControllerAsDelegateUITests.swift; sourceTree = "<group>"; };
 		931B09121C46A7F20001570B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		931B09201C46ABD30001570B /* UINavigationController+AppManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+AppManagerDelegate.swift"; sourceTree = "<group>"; };
+		931B09221C46ACA60001570B /* LightGrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightGrayViewController.swift; sourceTree = "<group>"; };
+		931B09241C46AD1D0001570B /* AppManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManagerViewController.swift; sourceTree = "<group>"; };
+		931B09261C46AE2F0001570B /* DarkGrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkGrayViewController.swift; sourceTree = "<group>"; };
+		93A576D01C46B05100678D95 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +108,16 @@
 			isa = PBXGroup;
 			children = (
 				931B08F01C46A7F20001570B /* AppDelegate.swift */,
-				931B08F21C46A7F20001570B /* ViewController.swift */,
-				931B08F41C46A7F20001570B /* Main.storyboard */,
+				93A576D01C46B05100678D95 /* AppManager.swift */,
+				931B09241C46AD1D0001570B /* AppManagerViewController.swift */,
 				931B08F71C46A7F20001570B /* Assets.xcassets */,
-				931B08F91C46A7F20001570B /* LaunchScreen.storyboard */,
+				931B09261C46AE2F0001570B /* DarkGrayViewController.swift */,
 				931B08FC1C46A7F20001570B /* Info.plist */,
+				931B08F91C46A7F20001570B /* LaunchScreen.storyboard */,
+				931B09221C46ACA60001570B /* LightGrayViewController.swift */,
+				931B08F41C46A7F20001570B /* Main.storyboard */,
+				931B09201C46ABD30001570B /* UINavigationController+AppManagerDelegate.swift */,
+				931B08F21C46A7F20001570B /* ViewController.swift */,
 			);
 			path = NavControllerAsDelegate;
 			sourceTree = "<group>";
@@ -256,8 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A576D11C46B05100678D95 /* AppManager.swift in Sources */,
 				931B08F31C46A7F20001570B /* ViewController.swift in Sources */,
+				931B09271C46AE2F0001570B /* DarkGrayViewController.swift in Sources */,
+				931B09211C46ABD30001570B /* UINavigationController+AppManagerDelegate.swift in Sources */,
 				931B08F11C46A7F20001570B /* AppDelegate.swift in Sources */,
+				931B09251C46AD1D0001570B /* AppManagerViewController.swift in Sources */,
+				931B09231C46ACA60001570B /* LightGrayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +504,7 @@
 				931B09171C46A7F20001570B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		931B09181C46A7F20001570B /* Build configuration list for PBXNativeTarget "NavControllerAsDelegateTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +513,7 @@
 				931B091A1C46A7F20001570B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		931B091B1C46A7F20001570B /* Build configuration list for PBXNativeTarget "NavControllerAsDelegateUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +522,7 @@
 				931B091D1C46A7F20001570B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

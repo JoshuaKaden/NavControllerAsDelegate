@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DarkGrayViewController.swift
 //  NavControllerAsDelegate
 //
 //  Created by Kaden, Joshua on 1/13/16.
@@ -8,15 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DarkGrayViewController: AppManagerViewController {
 
-    private let appManager: AppManager = AppManager()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.appManager.delegate = self.navigationController
+    @IBAction func didTapShowMessage(sender: AnyObject) {
+        self.appManager?.triggerMessageFromBackground()
     }
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         guard let vc : AppManagerViewController = segue.destinationViewController as? AppManagerViewController else { return }
         vc.appManager = self.appManager

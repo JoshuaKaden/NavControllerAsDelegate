@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LightGrayViewController.swift
 //  NavControllerAsDelegate
 //
 //  Created by Kaden, Joshua on 1/13/16.
@@ -8,14 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    private let appManager: AppManager = AppManager()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.appManager.delegate = self.navigationController
-    }
+class LightGrayViewController: AppManagerViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         guard let vc : AppManagerViewController = segue.destinationViewController as? AppManagerViewController else { return }
