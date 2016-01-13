@@ -10,4 +10,9 @@ import UIKit
 
 class AppManagerViewController : UIViewController {
     var appManager: AppManager?
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        guard let vc : AppManagerViewController = segue.destinationViewController as? AppManagerViewController else { return }
+        vc.appManager = self.appManager
+    }
 }

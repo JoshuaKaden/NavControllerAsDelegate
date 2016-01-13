@@ -8,18 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: AppManagerViewController {
 
-    private let appManager: AppManager = AppManager()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.appManager.delegate = self.navigationController
-    }
-
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        guard let vc : AppManagerViewController = segue.destinationViewController as? AppManagerViewController else { return }
-        vc.appManager = self.appManager
+        let appManager = AppManager()
+        appManager.delegate = self.navigationController
+        self.appManager = appManager
     }
 
 }

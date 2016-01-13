@@ -14,9 +14,4 @@ class DarkGrayViewController: AppManagerViewController {
         self.appManager?.triggerMessageFromBackground()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        guard let vc : AppManagerViewController = segue.destinationViewController as? AppManagerViewController else { return }
-        vc.appManager = self.appManager
-    }
-
 }

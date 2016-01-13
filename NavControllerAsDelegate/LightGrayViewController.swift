@@ -10,9 +10,4 @@ import UIKit
 
 class LightGrayViewController: AppManagerViewController {
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        guard let vc : AppManagerViewController = segue.destinationViewController as? AppManagerViewController else { return }
-        vc.appManager = self.appManager
-    }
-
 }
